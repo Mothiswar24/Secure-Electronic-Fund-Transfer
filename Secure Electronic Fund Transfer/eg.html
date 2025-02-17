@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gender Selection</title>
+  <style>
+    /* CSS to display radio buttons and labels inline */
+    .gender-selector {
+      max-width: 380px;
+      width: 100%;
+      background-color: #f0f0f0;
+      margin: 10px 0;
+      height: 55px;
+      border-radius: 55px;
+      display: flex;
+      align-items: center; /* Center vertically */
+      padding: 0 0.4rem;
+      position: relative;
+    }
+
+    /* Adjust radio button */
+    .gender-selector input[type="radio"] {
+      display: inline-block;
+      width: auto; /* Set width to auto */
+      margin-right: 10px; /* Adjust as needed */
+    }
+
+    /* Adjust label */
+    .gender-selector label {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <h2>Select Gender:</h2>
+  <div class="gender-selector">
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+  </div>
+  <br>
+  <input type="submit" value="Submit">
+</body>
+</html>
